@@ -1,0 +1,14 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container table{
+    border: 1px solid darkblue;
+    width: 100%;
+}
+
+.container img{
+    width: 200px;
+    height: 200px;
+}

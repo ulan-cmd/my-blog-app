@@ -1,16 +1,30 @@
 import React from 'react';
-import {Outlet} from "react-router-dom";
+import {Link} from "react-router-dom";
+import styles from './Catalog.module.css';
 
 const title = {
-    textAlign:"center"
+    textAlign: "center"
 }
 
 const Catalog = () => {
     return (
-        <div>
+        <>
             <h1 style={title}>Каталог</h1>
-            <Outlet/>
-        </div>
+            <div className={styles.container}>
+                <Link to="/catalog/apple-watch">
+                    <div className={styles.catalog_card}>
+                        <img src="https://istore.kg/media/category/watches.webp" alt=""/>
+                        <h2>Watch</h2>
+                    </div>
+                </Link>
+                <Link to="/catalog/iphone">
+                    <div className={styles.catalog_card}>
+                        <img src="https://istore.kg/media/category/iphones.webp" alt=""/>
+                        <h2>Iphone</h2>
+                    </div>
+                </Link>
+            </div>
+        </>
     );
 };
 

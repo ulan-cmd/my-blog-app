@@ -1,0 +1,21 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.catalog_card img{
+    width: 100%;
+}
+
+.catalog_card{
+    background: #f4ecec;
+    height: 368px;
+    padding: 40px 25px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
